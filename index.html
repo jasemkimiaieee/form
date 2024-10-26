@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="4.png" type="image/png">
+    <title>Spongebob Login Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+
+            <div class="spongebob">
+                <div class="spongebob__eyes">
+                    <div class="spongebob__eye">
+                        <img src="spongboob-eye.png" draggable="false" class="eye">
+                        <img src="spongboob-pupil.png" draggable="false" class="pupil">
+                    </div>
+                    <div class="spongebob__eye">
+                        <img src="spongboob-eye.png" draggable="false" class="eye">
+                        <img src="spongboob-pupil.png" draggable="false" class="pupil">
+                    </div>
+                </div>
+                <img src="spongboob-mouth.png" draggable="false" class="mouth">
+            </div>
+
+            <input class="form__input" type="text" placeholder="Username" name="username" id="username" required />
+            <input class="form__input" type="text" placeholder="You'r Phone" name="phone" id="phone" required />
+            <input class="form__input" type="email" placeholder="You'r Email" name="email" id="email" required />
+            <div class="password-container">
+                <input class="form__input form__input--margin" type="password" placeholder="Password" name="password" id="password" required />
+                <button class="changemode-btn" id="changeMode" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" width="100%">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <input class="form__input form__input--submit" type="submit" value="SUBMIT" />
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

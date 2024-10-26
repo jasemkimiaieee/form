@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    height: 100vh;
+}
+
+.form {
+    width: 100%;
+    max-width: 450px;
+    background-color: yellow;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.spongebob {
+    width: 100%;
+    user-select: none;
+}
+.spongebob__eyes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spongebob__eye {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+}
+.eye {
+    width: 100%;
+}
+.pupil {
+    position: absolute;
+    width: 40%;
+    bottom: 25%;
+    left: 30%;
+    transition: all 200ms ease-in-out;
+}
+.mouth {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -50px;
+    left: -3px;
+}
+.form__input {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: yellow;
+    border: 2px solid darkgreen;
+    margin-bottom: 20px;
+}
+.form__input--margin {
+    margin-bottom: 0;
+}
+.form__input::placeholder {
+    position: absolute;
+    transition: top 200ms ease-in-out;
+    top: 5px;
+}
+.form__input:focus::placeholder {
+    top: -20px;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+.changemode-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    inset-block: 0;
+    margin: auto;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgreen;
+    cursor: pointer;
+}
+.form__input--submit {
+    margin-top: 20px;
+    padding: 5px 40px;
+    width: 50%;
+}
